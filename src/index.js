@@ -150,6 +150,6 @@ app.get('/feed', async (req, res) => {
 const server = app.listen(3000, () =>
   console.log(`
     Server ready at: http://localhost:3000
-    See more ample requests: http://github.com/conghuiw/
+    See more sample requests: http://github.com/conghuiw/
   `),
 )
