@@ -1,39 +1,23 @@
 # REST API Example
 
-This example shows how to implement a **REST API** using [Express](https://expressjs.com/) and [Prisma Client](https://www.prisma.io/docs/concepts/components/prisma-client). It uses a SQLite database file with some initial dummy data which you can find at [`./prisma/dev.db`](./prisma/dev.db).
+This example shows how to implement a **REST API** using *Node.js* *Express* and *Prisma*. It uses a SQLite database file with some initial dummy data which you can find at [`./prisma/dev.db`](./prisma/dev.db).
 
 ## Getting started
 
 ### 1. Download example and install dependencies
 
-Download this example:
-
-```
-npx try-prisma --template javascript/rest-express
-```
-
-Install npm dependencies:
-```
-cd rest-express
-npm install
-```
-
-<details><summary><strong>Alternative:</strong> Clone the entire repo</summary>
-
 Clone this repository:
 
 ```
-git clone git@github.com:prisma/prisma-examples.git --depth=1
+git clone git@github.com:conghuiw/nodejs-express-prisma-restapi-sample.git
 ```
 
 Install npm dependencies:
 
 ```
-cd prisma-examples/javascript/rest-express
+cd nodejs-express-prisma-restapi-sample
 npm install
 ```
-
-</details>
 
 ### 2. Create and seed the database
 
@@ -194,7 +178,7 @@ const profile = await prisma.profile.create({
   data: {
     bio: 'Hello World',
     user: {
-      connect: { email: 'alice@prisma.io' },
+      connect: { email: 'alice@gmail.com' },
     },
   },
 })
@@ -205,7 +189,7 @@ const profile = await prisma.profile.create({
 ```ts
 const user = await prisma.user.create({
   data: {
-    email: 'john@prisma.io',
+    email: 'john@hotmail.com',
     name: 'John',
     profile: {
       create: {
@@ -220,7 +204,7 @@ const user = await prisma.user.create({
 
 ```ts
 const userWithUpdatedProfile = await prisma.user.update({
-  where: { email: 'alice@prisma.io' },
+  where: { email: 'alice@gmail.com' },
   data: {
     profile: {
       update: {
@@ -311,10 +295,3 @@ generator client {
 }
 ```
 </details>
-
-## Next steps
-
-- Check out the [Prisma docs](https://www.prisma.io/docs)
-- Share your feedback in the [`prisma2`](https://prisma.slack.com/messages/CKQTGR6T0/) channel on the [Prisma Slack](https://slack.prisma.io/)
-- Create issues and ask questions on [GitHub](https://github.com/prisma/prisma/)
-- Watch our biweekly "What's new in Prisma" livestreams on [Youtube](https://www.youtube.com/channel/UCptAHlN1gdwD89tFM3ENb6w)
