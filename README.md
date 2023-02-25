@@ -1,6 +1,6 @@
 # REST API Example
 
-This example shows how to implement a **REST API** using *Node.js* *Express* and *Prisma*. It uses a SQLite database file with some initial dummy data.
+This example shows how to implement a **REST API** using *Node.js* *Express* and *Prisma*. It uses a SQLite file with some initial dummy data as database.
 
 ## Getting started
 
