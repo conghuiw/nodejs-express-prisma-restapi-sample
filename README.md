@@ -36,7 +36,7 @@ When `npx prisma migrate dev` is executed against a newly created database, seed
 npm run dev
 ```
 
-The server is now running on `http://localhost:3000`. You can send the API requests implemented in `index.js`, e.g. [`http://localhost:3000/feed`](http://localhost:3000/feed).
+The server is now running. You can send the API requests implemented in `index.js`, e.g. [`http://localhost:3000/feed`](http://localhost:3000/feed).
 
 ## Using the REST API
 
