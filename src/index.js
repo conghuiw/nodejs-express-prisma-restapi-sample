@@ -147,7 +147,7 @@ app.get('/feed', async (req, res) => {
   res.json(posts)
 })
 
-const server = app.listen(3000, () =>
+const server = app.listen(3001, () =>
   console.log(`
     Server ready at: http://localhost:3001/feed
     See more sample requests: http://github.com/conghuiw/
