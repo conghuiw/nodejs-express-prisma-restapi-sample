@@ -149,7 +149,7 @@ app.get('/feed', async (req, res) => {
 
 const server = app.listen(3000, () =>
   console.log(`
-    Server ready at: http://localhost:3000/feed
+    Server ready at: http://localhost:3001/feed
     See more sample requests: http://github.com/conghuiw/
   `),
 )
